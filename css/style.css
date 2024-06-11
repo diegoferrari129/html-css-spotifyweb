@@ -49,7 +49,7 @@
 
 .row {
     display: flex;
-
+    flex-wrap: wrap;
 }
 
 .col--100 {
@@ -60,6 +60,7 @@
     width: calc(100% / 6);
     background-color: blueviolet;
     border: 1px solid black;
+    flex-direction: row;
 }
 
 .text-end {
@@ -75,4 +76,10 @@
     background-color: brown;
     height: calc(100vw / 6 - 70px);
     margin: 10px;
+}
+
+@media screen and ( max-width: 768px ) {
+    .col--16 {
+        width: calc(100% / 4);
+    }
 }
