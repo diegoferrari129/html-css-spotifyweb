@@ -29,12 +29,25 @@
 
 /* UPGRADE */
 .upgrade {
-    background-color: bisque;
+    background-color: rgba(0, 0, 0, 0.5);
     width: calc(100vw - 200px);
     position: fixed;
     top: 0;
     left: 200px;
     z-index: 1;
+}
+
+.button {
+    background-color: black;
+    color: white;
+}
+
+.button--active {
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin: 15px;
+    font-size: 8px;
+    font-weight: 600;
 }
 
 /* MAIN */
@@ -48,7 +61,7 @@
 }
 
 .nav {
-    margin-top: 20px;
+    margin-top: 65px;
     text-align: center;
 }
 
@@ -106,13 +119,13 @@
 }
 
 .col--15 {
-    width: 15%;
+    width: 150px;
     background-color: crimson;
     height: 100px;
 }
 
 .col--70 {
-    width: 70%;
+    width: calc(100% - 300px);
     background-color: darkblue;
 }
 
