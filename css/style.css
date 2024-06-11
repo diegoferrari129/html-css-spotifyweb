@@ -15,6 +15,17 @@
     left: 0;
 }
 
+.sidebar__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.sidebar__account, .sidebar__menu{
+    background-color: azure;
+}
+
 .upgrade {
     background-color: bisque;
     width: calc(100vw - 200px);
@@ -31,6 +42,17 @@
     position: fixed;
     top: 0;
     left: 200px;
+}
+
+.nav {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.main__content {
+    background-color: brown;
+    height: calc(100vw / 6 - 70px);
+    margin: 10px;
 }
 
 .multimedia {
@@ -60,22 +82,10 @@
     width: calc(100% / 6);
     background-color: blueviolet;
     border: 1px solid black;
-    flex-direction: row;
 }
 
 .text-end {
     text-align: end;
-}
-
-.nav {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.main__content {
-    background-color: brown;
-    height: calc(100vw / 6 - 70px);
-    margin: 10px;
 }
 
 @media screen and ( max-width: 768px ) {
