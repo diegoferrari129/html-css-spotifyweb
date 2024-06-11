@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    
+}
+
 /* SPECIFICS */
 /* SIDEBAR */
 .sidebar {
@@ -61,8 +65,20 @@
 }
 
 .nav {
-    margin-top: 65px;
+    margin-top: 75px;
     text-align: center;
+}
+
+.nav__list__item{
+    display: inline;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.505);
+    padding: 0 5px;
+}
+
+.main__title {
+    margin: 10px 0 0 10px;
+    color: white;
 }
 
 .main__content {
