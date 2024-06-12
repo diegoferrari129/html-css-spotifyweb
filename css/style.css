@@ -68,7 +68,6 @@ body {
 .nav {
     margin-top: 75px;
     text-align: center;
-    
 }
 
 .nav__list__item{
@@ -79,12 +78,24 @@ body {
 }
 
 .main__title {
-    margin: 15px 0 0 10px;
+    margin: 15px 0 0 5px;
     color: white;
+}
+
+.main__title__album {
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+
+.main__subtitle {
+    color: rgba(255, 255, 255, 0.499);
+    padding: 5px 0;
 }
 
 .main__content {
     margin: 5px;
+    padding-top: 10px;
 }
 
 .main__content img {
@@ -103,7 +114,6 @@ body {
 .multimedia__current {
     display: flex;
     width: 100%;
-    
 }
 
 .multimedia__current__time {
@@ -115,12 +125,12 @@ body {
 .multimedia__current__bar {
     width: 70%;
     background-color: darkorange;
-
 }
 
 /* LAYOUT */
 .container {
     min-width: 100%;
+    margin: 0 auto;
 }
 
 .row {
@@ -157,6 +167,14 @@ body {
 
 .text-end {
     text-align: end;
+}
+
+.mleft {
+    margin-left: 5px;
+}
+
+.text-center {
+    text-align: center;
 }
 
 /* RESPONSIVE */
