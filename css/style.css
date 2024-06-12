@@ -25,10 +25,65 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    color: rgba(255, 255, 255, 0.499);
 }
 
-.sidebar__account, .sidebar__menu{
-    background-color: azure;
+.sidebar__logo {
+    padding: 15px 0 10px 10px;
+}
+
+.sidebar__logo img {
+    width: 50%;
+}
+
+.sidebar__menu span {
+    padding-left: 3px;
+    font-size: 10px;
+}
+
+.sidebar__playlist__title {
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.sidebar__playlist ul {
+    list-style-type: none;
+}
+
+.sidebar__playlist__list__item {
+    font-size: 10px;
+    padding: 10px 0;
+}
+
+.sidebar__account {
+    background-color: black;
+    position: fixed;
+    bottom: 100px;
+    left: 0px;
+    z-index: 1;
+}
+
+.sidebar__account__install {
+    font-size: 10px;
+    padding: 0 0 5px 10px;
+}
+
+.sidebar__account__install span {
+    padding: 5px 5px;
+}
+
+.sidebar__account__name {
+    padding: 5px 0 5px 10px;
+}
+
+.sidebar__account__name span {
+    font-size: 12px;
+    padding: 5px 5px;
+}
+
+.sidebar__account__hr {
+    margin: 0 10px 0 10px;
+    width: 200%;
 }
 
 /* UPGRADE */
@@ -177,6 +232,14 @@ body {
     text-align: center;
 }
 
+.py {
+    padding: 5px 0 5px 10px;
+}
+
+.text--color {
+    color: rgba(255, 255, 255, 0.904);
+}
+
 /* RESPONSIVE */
 /* MD */
 @media screen and ( max-width: 768px ) {
@@ -206,6 +269,16 @@ body {
     .main {
         width: calc(100vw - 50px);
         left: 50px;
+    }
+
+    .sidebar__menu span, .sidebar__playlist, .sidebar__account span, .logo, .sidebar__account__hr {
+        display: none;
+    }
+}
+
+@media screen and ( min-width: 480px ) {
+    .logo-sm {
+        display: none;
     }
 }
 

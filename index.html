@@ -5,23 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="sidebar">
         <div class="sidebar__content">
             <div class="sidebar__menu">
                 <div class="sidebar__logo">
-                    logo
+                    <img class="logo" src="./img/logo.svg" alt="">
+                    <img class="logo-sm" src="./img/logo-small.svg" alt="">
                 </div>
                 <div class="sidebar__search">
-                    search
+                    <div class="py text--color">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </div>
+                    <div class="py">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Search</span>
+                    </div>
                 </div>
-                <div class="sidebar__playlist">
-                    playlist
+                <div class="py">
+                    <i class="fa-solid fa-book"></i>
+                    <span>La tua libreria</span>
+                </div>
+                <div class="sidebar__playlist py">
+                    <h6 class="sidebar__playlist__title">PLAYLIST</h6>
+                    <ul>
+                        <li class="sidebar__playlist__list__item">
+                            <i class="fa-solid fa-square-plus fa-2xl"></i>
+                            <span>Crea playlist</span>
+                        </li>
+                        <li class="sidebar__playlist__list__item">Nuova playlist</li>
+                        <li class="sidebar__playlist__list__item">Nuova playlist</li>
+                        <li class="sidebar__playlist__list__item">Nuova playlist</li>
+                        <li class="sidebar__playlist__list__item">Nuova playlist</li>
+                        <li class="sidebar__playlist__list__item">Nuova playlist</li>
+                        <li class="sidebar__playlist__list__item">Nuova playlist</li>
+                        <li class="sidebar__playlist__list__item">Nuova playlist</li>
+                    </ul>
                 </div>
             </div>
             <div class="sidebar__account">
-                aa
+                <div class="sidebar__account__install">
+                    <i class="fa-brands fa-instalod"></i>
+                    <span>Installa app</span>
+                </div>
+                <div><hr class="sidebar__account__hr"></div>
+                <div class="sidebar__account__name">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <span>John Doe</span>
+                </div>
             </div>
         </div>
     </div>
@@ -100,7 +135,7 @@
             </div>
         </div>
         <div class="container">
-            <h3 class="main__title">Creato per Jhon Doe</h3>
+            <h3 class="main__title">Creato per John Doe</h3>
             <h6  class="main__subtitle mleft">Più ascolti, più accurati saranno i suggerimenti.</h6>
             <div class="row">
                 <div class="col--16">
