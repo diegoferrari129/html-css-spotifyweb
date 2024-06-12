@@ -18,16 +18,16 @@
                 </div>
                 <div class="sidebar__search">
                     <div class="py text--color">
-                        <i class="fa-solid fa-house"></i>
+                        <img class="sidebar__search__img" src="./img/home.svg" alt="">
                         <span>Home</span>
                     </div>
                     <div class="py">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <img class="sidebar__search__img" src="./img/search.svg" alt="">
                         <span>Search</span>
                     </div>
                 </div>
                 <div class="py">
-                    <i class="fa-solid fa-book"></i>
+                    <img class="sidebar__search__img" src="./img/libreria.svg" alt="">
                     <span>La tua libreria</span>
                 </div>
                 <div class="sidebar__playlist py">
@@ -49,7 +49,7 @@
             </div>
             <div class="sidebar__account">
                 <div class="sidebar__account__install">
-                    <i class="fa-brands fa-instalod"></i>
+                    <img class="sidebar__account__img" src="./img/download.svg" alt="">
                     <span>Installa app</span>
                 </div>
                 <div><hr class="sidebar__account__hr"></div>
@@ -174,18 +174,47 @@
     
     <div class="multimedia">
         <div class="row">
-            <div class="col--15"></div>
-            <div class="col--70 col--70--active">
-                <div class="multimedia__current__buttons">
-                    buttons
-                </div>
-                <div class="multimedia__current">
-                    <div class="multimedia__current__time">time</div>
-                    <div class="multimedia__current__bar">bar</div>
-                    <div class="multimedia__current__time">time</div>
+            <div class="col--15 col--15--active">
+                <div class="multimedia__info">
+                    <img src="./img/sinister.jpeg" alt="">
+                    <div class="multimedia__info__title">Sinister</div>
+                    <div class="multimedia__info__subtitle">Brano Name</div>
+                    <div class="multimedia__info__icons">
+                        <div><i class="fa-regular fa-heart fa-sm"></i></div>
+                        <div><i class="fa-regular fa-folder fa-sm"></i></div>
+                    </div>
                 </div>
             </div>
-            <div class="col--15"></div>
+            <div class="col--70 col--70--active">
+                <div class="multimedia__current__buttons">
+                    <ul>
+                        <li><i class="fa-solid fa-shuffle"></i></li>
+                        <li><i class="fa-solid fa-forward-step fa-flip-horizontal"></i></li>
+                        <li><i class="fa-regular fa-circle-play fa-xl"></i></li>
+                        <li><i class="fa-solid fa-forward-step"></i></li>
+                        <li><i class="fa-solid fa-arrow-rotate-right"></i></li>
+                    </ul>
+                </div>
+                <div class="multimedia__current">
+                    <div class="multimedia__current__time text-end">0.25</div>
+                    <div class="multimedia__current__bar">
+                        <div class="bar__background">
+                            <div class="bar__current"></div>
+                        </div>
+                    </div>
+                    <div class="multimedia__current__time">4.35</div>
+                </div>
+            </div>
+            <div class="col--15 col--15--active">
+                <div class="multimedia__current__setting">
+                    <i class="fa-solid fa-list fa-sm"></i>
+                    <i class="fa-solid fa-display fa-sm"></i>
+                    <i class="fa-solid fa-volume-high fa-sm"></i>
+                    <span class="volume__background">
+                        <div class="volume__current"></div>
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
 </body>

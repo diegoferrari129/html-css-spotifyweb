@@ -41,6 +41,11 @@ body {
     font-size: 10px;
 }
 
+.sidebar__search__img {
+    width: 10%;
+    float: left;
+}
+
 .sidebar__playlist {
     overflow-y: hidden;
 }
@@ -48,6 +53,7 @@ body {
 .sidebar__playlist__title {
     padding-top: 15px;
     padding-bottom: 5px;
+    color: white;
 }
 
 .sidebar__playlist ul {
@@ -72,6 +78,11 @@ body {
 .sidebar__account__install {
     font-size: 10px;
     padding: 0 0 5px 10px;
+}
+
+.sidebar__account__img {
+    float: left;
+    width: 20%;
 }
 
 .sidebar__account__install span {
@@ -117,7 +128,7 @@ body {
 
 /* MAIN */
 .main {
-    background-color: rgb(40, 40, 40);
+    background-color: #141922;
     width: calc(100vw - 200px);
     height: calc(100vh - 100px);
     position: fixed;
@@ -170,6 +181,33 @@ body {
     position: fixed;
     bottom: 0;
     left: 0;
+    background-color: #282828;
+}
+
+
+.multimedia__info img {
+    width: 40%;
+    float: left;
+    padding: 12px 5px 0 5px;
+}
+
+.multimedia__info__title {
+    font-size: 11px;
+    color: white;
+    padding-top: 23px;
+}
+
+.multimedia__info__subtitle {
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.499);
+}
+
+.multimedia__info__icons {
+    float: right;
+    position: relative;
+    bottom: 25px;
+    right: 5px;
+    color: rgba(255, 255, 255, 0.499);
 }
 
 .multimedia__current {
@@ -177,15 +215,64 @@ body {
     width: 100%;
 }
 
+.multimedia__current__buttons {
+    padding-bottom: 10px;
+}
+
+.multimedia__current__buttons ul {
+    list-style-type: none;
+}
+
+.multimedia__current__buttons li {
+    display: inline;
+    color: white;
+    padding: 0 10px;
+}
+
 .multimedia__current__time {
     width: 15%;
-    background-color: chartreuse;
-
+    font-size: 10px;
+    color: white;
 }
 
 .multimedia__current__bar {
     width: 70%;
-    background-color: darkorange;
+    padding: 5px;
+}
+
+.bar__background {
+    width: 100%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.514);
+    border-radius: 30px;
+}
+
+.bar__current {
+    width: 20%;
+    height: 3px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.multimedia__current__setting i {
+    color: white;
+    padding: 0 5px;
+}
+
+.volume__background {
+    width: 50px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.514);
+    border-radius: 30px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.volume__current {
+    width: 40%;
+    height: 3px;
+    background-color: white;
+    border-radius: 30px;
 }
 
 /* LAYOUT */
@@ -209,13 +296,19 @@ body {
 
 .col--15 {
     width: 150px;
-    background-color: crimson;
+    height: 100px;
+}
+
+.col--15--active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100px;
 }
 
 .col--70 {
     width: calc(100% - 300px);
-    background-color: darkblue;
 }
 
 .col--70--active {
@@ -259,6 +352,10 @@ body {
     .col--16 {
         width: calc(100% / 2);
     }
+
+    .multimedia__current__buttons, .multimedia__current {
+        min-width: 200px;
+    }
 }
 
 /* XSM */
@@ -280,6 +377,17 @@ body {
     .sidebar__menu span, .sidebar__playlist, .sidebar__account span, .logo, .sidebar__account__hr {
         display: none;
     }
+
+    .sidebar__search__img {
+        width: 25px;
+        padding: 7px 0;
+    }
+
+    .sidebar__account__img {
+        width: 25px;
+        padding: 0 11px 10px 0
+    }
+
 }
 
 @media screen and ( min-width: 480px ) {
