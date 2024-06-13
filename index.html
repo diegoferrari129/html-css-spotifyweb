@@ -19,16 +19,16 @@
                 <div class="sidebar__search">
                     <div class="py text--color">
                         <img class="sidebar__search__img" src="./img/home.svg" alt="">
-                        <span>Home</span>
+                        <span class="sidebar__search__text">Home</span>
                     </div>
                     <div class="py">
                         <img class="sidebar__search__img" src="./img/search.svg" alt="">
-                        <span>Search</span>
+                        <span class="sidebar__search__text">Search</span>
                     </div>
                 </div>
                 <div class="py">
                     <img class="sidebar__search__img" src="./img/libreria.svg" alt="">
-                    <span>La tua libreria</span>
+                    <span class="sidebar__search__text">La tua libreria</span>
                 </div>
                 <div class="sidebar__playlist py">
                     <h6 class="sidebar__playlist__title">PLAYLIST</h6>
@@ -50,12 +50,12 @@
             <div class="sidebar__account">
                 <div class="sidebar__account__install">
                     <img class="sidebar__account__img" src="./img/download.svg" alt="">
-                    <span>Installa app</span>
+                    <span class="sidebar__account__text">Installa app</span>
                 </div>
                 <div><hr class="sidebar__account__hr"></div>
                 <div class="sidebar__account__name">
                     <i class="fa-solid fa-circle-user"></i>
-                    <span>John Doe</span>
+                    <span class="sidebar__account__text">John Doe</span>
                 </div>
             </div>
         </div>
@@ -92,14 +92,17 @@
             <div class="row">
                 <div class="col--16">
                     <div class="main__content">
-                        <img src="./img/metal_lifting.jpg" alt="">
+                        <img class="main__content__img" src="./img/metal_lifting.jpg" alt="">
                     </div>
                     <h4 class="main__title__album">Heavy Metal</h4>
                     <h6 class="main__subtitle text-center">Subtitle</h6>
                 </div>
                 <div class="col--16">
                     <div class="main__content">
-                        <img src="./img/stranger.jpeg" alt="">
+                        <img class="main__content__img" src="./img/stranger.jpeg" alt="">
+                        <div class="main__content__icon">
+                            <i class="fa-regular fa-circle-play fa-2xl"></i>
+                        </div>
                     </div>
                     <h4 class="main__title__album">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack) </h4>
                     <h6 class="main__subtitle text-center">Kyle Dixon & Michael Stein</h6>
@@ -180,8 +183,8 @@
                     <div class="multimedia__info__title">Sinister</div>
                     <div class="multimedia__info__subtitle">Brano Name</div>
                     <div class="multimedia__info__icons">
-                        <div><i class="fa-regular fa-heart fa-sm"></i></div>
-                        <div><i class="fa-regular fa-folder fa-sm"></i></div>
+                        <div class="multimedia__info__icon--heart"><i class="fa-regular fa-heart fa-sm"></i></div>
+                        <div class="multimedia__info__icon--folder"><i class="fa-regular fa-folder fa-sm"></i></div>
                     </div>
                 </div>
             </div>
@@ -190,7 +193,7 @@
                     <ul>
                         <li><i class="fa-solid fa-shuffle"></i></li>
                         <li><i class="fa-solid fa-forward-step fa-flip-horizontal"></i></li>
-                        <li><i class="fa-regular fa-circle-play fa-xl"></i></li>
+                        <li><i class="fa-regular fa-circle-play fa-xl current__button__play"></i></li>
                         <li><i class="fa-solid fa-forward-step"></i></li>
                         <li><i class="fa-solid fa-arrow-rotate-right"></i></li>
                     </ul>

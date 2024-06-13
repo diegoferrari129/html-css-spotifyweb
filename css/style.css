@@ -339,6 +339,46 @@ body {
     color: rgba(255, 255, 255, 0.904);
 }
 
+/* HOVER */
+.nav__list__item:hover, .sidebar__search__text:hover, .sidebar__playlist__list__item:hover, .sidebar__account__text:hover, .multimedia__info__icon--heart:hover, .multimedia__info__icon--folder:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.button--active:hover {
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.multimedia__info__subtitle:hover {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+
+.current__button__play:hover {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.bar__current:hover, .volume__current:hover {
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+.main__content__img {
+
+}
+
+.main__content__icon {
+}
+  
+
+.main__content__img:hover .main__content__icon {
+    display: block;
+}
+
+
 /* RESPONSIVE */
 /* MD */
 @media screen and ( max-width: 768px ) {
@@ -387,6 +427,41 @@ body {
         width: 25px;
         padding: 0 11px 10px 0
     }
+
+    .col--15--active {
+        align-items: end;
+        padding-right: 5px;
+    }
+
+    .multimedia__info img {
+        float: none;
+        width: 30%;
+        margin-top: 30px;
+        position: relative;
+        top: 20px;
+    }
+
+    .multimedia__info__title, .multimedia__info__subtitle {
+        padding-left: 5px;
+    }
+
+    .multimedia__info__subtitle {
+        padding-bottom: 20px;
+    }
+
+    .multimedia__info__icons {
+        right: 80px;
+        bottom: 85px;
+    }
+
+    .multimedia__current {
+        width: 50%;
+    }
+
+    .volume__background, .volume__current {
+        width: 3px;
+        height: 50px;
+    } 
 
 }
 
